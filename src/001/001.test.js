@@ -1,5 +1,10 @@
-import sum from './001';
+import multipleOf from './001';
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+test('multipleOf 3 and 5 below 10', () => {
+  expect(multipleOf(10).group).toEqual([3,5,6,9]);
 });
+test('multipleOf 3 and 5 below 10 is 23', () => {
+  expect(multipleOf(10).sum).toBe(23);
+});
+console.log(multipleOf(1000).sum);
+// 233168

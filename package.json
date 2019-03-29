@@ -4,7 +4,7 @@
   "description": "My take on solving the problem at https://projecteuler.net",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "jest": {
     "transform": {
