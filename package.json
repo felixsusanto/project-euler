@@ -1,0 +1,30 @@
+{
+  "name": "project-euler",
+  "version": "1.0.0",
+  "description": "My take on solving the problem at https://projecteuler.net",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+(\\.test)?\\.jsx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixsusanto/project-euler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixsusanto/project-euler/issues"
+  },
+  "homepage": "https://github.com/felixsusanto/project-euler#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-jest": "^24.5.0",
+    "jest": "^24.5.0"
+  }
+}
