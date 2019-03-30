@@ -1,6 +1,6 @@
 // https://projecteuler.net/problem=2
 
-const fibonacci = (limit, acc) => {
+export const fibonacci = (limit, acc) => {
   acc = acc || [1,2];
   const start = acc[acc.length - 2];
   const last = acc[acc.length - 1];
@@ -13,11 +13,9 @@ const fibonacci = (limit, acc) => {
 };
 
 export const addOnlyEvenMembers = (acc, val) => {
-  if(val > 2 && val % 2 === 0) {
+  if(val >= 2 && val % 2 === 0) {
     return acc + val;
   } else {
     return acc;
   }
 }
-
-export default fibonacci;
