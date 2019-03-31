@@ -1,3 +1,4 @@
+// https://projecteuler.net/problem=6
 export const sumSquareDifference = (limit) => {
   const sumFn = (a,b) => a + b;
   const sumSquare = [...Array(limit).keys()]
