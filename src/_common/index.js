@@ -9,3 +9,17 @@ export const getPrimeNumber = (limit) => {
   }
   return arr;
 };
+
+export const getPrimeNumberByIndex = (baseOneIndex) => {
+  const arr = [ 2 ];
+  let i = 2;
+  while(arr.length < baseOneIndex) {
+    const isNotPrime = arr.some((v) => i % v === 0);
+    if (!isNotPrime) {
+      // prime
+      arr.push(i);
+    }
+    i++;
+  }
+  return arr[baseOneIndex - 1];
+};
