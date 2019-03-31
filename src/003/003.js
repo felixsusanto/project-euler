@@ -1,3 +1,4 @@
+// https://projecteuler.net/problem=3
 
 export const getPrimeNumber = (limit) => {
   const arr = [2,3,5,7];
